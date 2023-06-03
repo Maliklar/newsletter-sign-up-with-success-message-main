@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "RobotoBold";
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+}
+
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --DarkSlateGrey: hsl(234, 29%, 20%);
+  --CharcoalGrey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: "RobotoRegular";
+  color: var(--DarkSlateGrey);
+}
+
+h1 {
+  font-family: "RobotoBold";
+  font-size: 3.5em;
+  color: var(--CharcoalGrey);
+  margin: 0;
+  margin-bottom: 0.1em;
+}
+
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  background-color: var(--CharcoalGrey);
+}
+
+main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 640px;
+  max-width: 924px;
+  width: 100%;
+  padding: 1.4em;
+  border-radius: 40px;
+  background-color: var(--White);
+  box-shadow: 0px 0px 2em var(--DarkSlateGrey);
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 4.25em 2.4em;
+  height: 100%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0em;
+  list-style: none circle url(./assets/images/icon-list.svg);
+  margin-top: 0px;
+}
+
+li {
+  margin-top: 0.7em;
+  vertical-align: middle;
+  background-image: url(./assets/images/icon-list.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  vertical-align: middle;
+  line-height: 1.5em;
+  min-height: 1.5em;
+  padding-inline-start: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: "RobotoBold";
+  margin-top: 1.3em;
+}
+
+form > label {
+  font-size: 0.8em;
+  line-height: 2.3;
+}
+
+form > button {
+  margin-top: 1.5em;
+}
+
+input {
+  padding: 1.5em;
+  border-radius: 10px;
+  border: var(--Grey) solid 1px;
+}
+
+button {
+  padding: 1.4em;
+  border-radius: 10px;
+  background-color: var(--DarkSlateGrey);
+  color: var(--White);
+}
